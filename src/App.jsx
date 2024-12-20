@@ -1,9 +1,10 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import MyFooter from './components/MyFooter';
 import { useLocation } from 'react-router-dom';
 import { useAuth } from './context/AuthContext';
-import Navbar from './components/Navbar';
+import MyFooter from './components/MyFooter';
+import Nav from './components/Nav';
+
 
 function App() {
   const { token } = useAuth();
@@ -12,7 +13,7 @@ function App() {
 
   return (
     <>
-      {token && !isAuthPage && <Navbar />}
+      {token && !isAuthPage && <Nav />}
       <div className={token && !isAuthPage ? 'pt-16' : ''}>
         <Outlet />
       </div>

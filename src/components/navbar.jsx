@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { FaCalendar, FaBars, FaTimes, FaSignOutAlt, FaUser } from 'react-icons/fa';
+import { FaCalendar, FaBars, FaTimes, FaSignOutAlt } from 'react-icons/fa';
 import { useAuth } from '../context/AuthContext';
 
 const Navbar = () => {
