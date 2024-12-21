@@ -13,7 +13,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api/users/login', { email, password });
+      const response = await axios.post('https://adem-445322.nw.r.appspot.com/api/users/login', { email, password });
       const { token, user } = response.data;
       login(user, token);
       navigate('/');
