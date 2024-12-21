@@ -19,7 +19,7 @@ const MyEvents = () => {
         return;
       }
 
-      const response = await axios.get('/api/events/my-events', {
+      const response = await axios.get('https://adem-445322.nw.r.appspot.com/api/events/my-events', {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -57,7 +57,7 @@ const MyEvents = () => {
         return;
       }
 
-      await axios.delete(`/api/events/${eventId}`, {
+      await axios.delete(`https://adem-445322.nw.r.appspot.com/api/events/${eventId}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

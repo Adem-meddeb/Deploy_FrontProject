@@ -34,7 +34,7 @@ const EventComponent = () => {
         imageUrl: newEvent.imageUrl
       };
 
-      await axios.post('/api/events', eventData, {
+      await axios.post('https://adem-445322.nw.r.appspot.com/api/events', eventData, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'

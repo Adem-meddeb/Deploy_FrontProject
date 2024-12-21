@@ -22,7 +22,7 @@ const EventList = () => {
         return;
       }
 
-      const response = await axios.get('/api/events/all', {
+      const response = await axios.get('https://adem-445322.nw.r.appspot.com/api/events/all', {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -61,7 +61,7 @@ const EventList = () => {
         return;
       }
 
-      await axios.post(`/api/events/${eventId}/register`, {}, {
+      await axios.post(`https://adem-445322.nw.r.appspot.com/api/events/${eventId}/register`, {}, {
         headers: {
           Authorization: `Bearer ${token}`
         }

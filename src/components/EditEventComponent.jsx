@@ -25,7 +25,7 @@ const EditEventComponent = () => {
           return;
         }
         //const response = await axios.get(`/api/events/${id}`, { headers: { Authorization: `Bearer ${token}` } });
-        const response = await axios.get(`/api/events/${id}`, {
+        const response = await axios.get(`https://adem-445322.nw.r.appspot.com/api/events/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           }
@@ -71,7 +71,7 @@ const EditEventComponent = () => {
         imageUrl: event.imageUrl
       };
   
-      await axios.put(`/api/events/${id}`, eventData, {
+      await axios.put(`https://adem-445322.nw.r.appspot.com/api/events/${id}`, eventData, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json',

@@ -30,7 +30,7 @@ const Register = () => {
     }
 
     try {
-      await axios.post('/api/users/register', formData);
+      await axios.post('https://adem-445322.nw.r.appspot.com/api/users/register', formData);
       navigate('/login');
     } catch (err) {
       setError('Erreur lors de l\'inscription');
