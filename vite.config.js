@@ -9,7 +9,7 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      '/api': 'http://localhost:9098'
+      '/api':'https://adem-445322.nw.r.appspot.com'
     }
   }
 })
